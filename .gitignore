@@ -1,0 +1,30 @@
+# Private business data and generated meetings
+/my-business/
+/sessions/
+/growth/
+/portfolio/
+/HANDOFF-FOR-CONTENT.md
+
+# Personal source material and generated clones
+/clone-a-brain/sources/*
+!/clone-a-brain/sources/README.txt
+/clone-a-brain/my-advisors/*
+!/clone-a-brain/my-advisors/README.txt
+
+# Credentials and local app settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.claude/
+.codex/
+.omc/
+
+# OS and Python artifacts
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
