@@ -9,13 +9,28 @@ HOW TO USE
    - Your research file(s) from prompt 01
    - templates/BRAIN-TEMPLATE.md
    - templates/SOURCES-TEMPLATE.md
-   - Optional, but it makes the voice much better: 2 to 5 transcripts of the person talking. On YouTube in a desktop browser, open the video's description, click "Show transcript", select all of it and paste it into a text file. Pick long interviews or talks.
+   - Optional, but it makes the voice much better: their voice file from NotebookLM (see GET THEIR VOICE FROM NOTEBOOKLM below). It reads up to 50 of their videos at once, so you never copy transcripts by hand.
 3. Fill in the [BRACKETS] below the line and paste everything below the line.
 4. The brain is too long for one reply, so it comes in 4 parts. After each part, type: next
 5. Save the result:
    - Parts 1 to 3, in order, into one plain text file named [First-Last]-Brain.md
    - Part 4 into a file named [First-Last]-Sources.md
    If the chat offers a downloadable file, use that instead. If your upload later rejects .md files, rename them to .txt.
+
+GET THEIR VOICE FROM NOTEBOOKLM (do this before step 2)
+1. On YouTube, find or make a playlist of their long interviews and talks. Longer and more recent is better.
+2. With a NotebookLM Chrome extension installed, click its NotebookLM button on the playlist page. It sends every video in the playlist into one new notebook. A notebook holds up to 50 sources on the free plan.
+3. Open the notebook at notebooklm.google.com, paste the voice prompt below into its chat and send it. Fill in the name first.
+4. Copy the answer into a text file named [First-Last]-Voice.txt and attach it in step 2.
+
+---- VOICE PROMPT (paste into NotebookLM) ----
+Using only these sources, write a voice and thinking file for [NAME].
+1. How they talk: sentence length, energy, phrases they repeat, how they deliver a hard truth. Then 10 short examples, word for word, under 25 words each, with the video title and timestamp.
+2. Their rules and frameworks, in their own words where you can, each with the video it came from.
+3. The stories they tell to make a point, one line each, with the video.
+4. The questions they ask before a big decision.
+Quote only words you can see in a source. If you are not sure it is word for word, paraphrase and say so.
+---- END OF VOICE PROMPT ----
 
 ================ COPY EVERYTHING BELOW THIS LINE ================
 
@@ -31,7 +46,7 @@ ATTACHED
 - Research notes (one or more files) with tagged items and a sources table.
 - BRAIN-TEMPLATE.md: the structure you must follow.
 - SOURCES-TEMPLATE.md: the structure for the sources file.
-- Possibly some transcripts of the person talking. Use them for voice and to confirm quotes.
+- Possibly a voice file from NotebookLM, or transcripts of the person talking. Use them for voice and to confirm quotes.
 
 RULES
 1. Follow BRAIN-TEMPLATE.md exactly: all 13 sections, the same headings in the same order. Replace every piece of template guidance with real content. Replace {Name} with the person's name, and use the FILE PREFIX in file names (for example [PREFIX]-Sources.md).
